@@ -189,7 +189,7 @@ We need to create some files in `/views/auth` directory:
 </html>
 ```
 
-> optional: replace the content inside the `index.hbs` file.
+> optional: replace the content inside the `index.hbs` file and modify the index routes.
 
 * `index.hbs`
 
@@ -201,6 +201,15 @@ We need to create some files in `/views/auth` directory:
     <p>please login or signup</p>
   {{/if}}
 </div>
+```
+
+* `routes/index.js`
+
+```js
+router.get('/', (req, res, next) => {
+  const user = req.user;
+  res.render('index', {user});
+});
 ```
 
 ## Routes
