@@ -35,7 +35,7 @@ Before start we will need a couple of dependencies to install:
 we will also need another dependencies to handle session:
 
 ```bash
-npm i connect-mongo express-session connect-ensure-login
+npm i connect-mongo express-session
 ```
 
 ## Creating our user model
