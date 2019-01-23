@@ -10,8 +10,8 @@
 After this lesson, you will be able to:
 
 * Apply a mongoose plugin.
-* Agilizar el proceso de autenticación
-* Aplicar conceptos de unidades anteriores pero concentrado en la funcionalidad.
+* Simplify the auth process
+* Make authorization and authentication easily.
 
 ## Introduction
 
@@ -88,7 +88,7 @@ the previous code configures passport with the local strateggy and applies `seri
 In our main file `app.js` we should add the passport settup file that we recently created and apply the `initialize` and `session` methods as well as the basic session config:
 
 ```js
-// don't forget import passport config(/services/passport), session y MongoStore
+// don't forget import passport config(/services/passport), session and MongoStore
 const passport = require('./services/passport')
 const session = require('express-session')
 const MongoStore = require('connect-mongo')(session)
